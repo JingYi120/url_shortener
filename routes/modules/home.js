@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Url = require('../../models/url')
 const randomUrl = require('../../randomUrl')
+const localhost = 'http://localhost:3000'
 
 router.get('/', (req, res) => {
   res.render('index')
