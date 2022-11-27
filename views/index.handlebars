@@ -1,6 +1,6 @@
 <form action="/" method="POST">
   <div class="container">
-    <input type="url" name="url" placeholder="Input URL here" required />
+    <input type="url" name="url" placeholder="Input URL here" value="{{ longUrl }}" required />
     <button class="shorten" type="submit">Shorten</button>
   </div>
 </form>
@@ -10,6 +10,9 @@
   <p id="generatedURL">{{shortUrl}}</p>
 </div>
 <button class="copy" onclick="copy()">Copy</button>
+<form class="redirect" action="{{ longUrl }}" target="_blank">
+  <input type="submit" class="redirect" value="View the website" />
+</form>
 
 <script>
   function copy() {

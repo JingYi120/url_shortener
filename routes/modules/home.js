@@ -37,9 +37,8 @@ router.post('/', (req, res) => {
 })
 
 router.get('/:shortUrl', (req, res) => {
-  const shortUrl = req.params.shortUrl
+  const shortUrl = `${localhost}/`+req.params.shortUrl
   Url.findOne({ shortUrl })
-    .lean()
     .then((urls) => {
       if (!urls) {
         res.redirect('/')

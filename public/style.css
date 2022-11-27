@@ -72,3 +72,11 @@ button.copy {
   border: 1px solid white;
   color: white;
 }
+
+input.redirect {
+  width: 161.6px;
+  height: 33.07px;
+  padding: 0.5rem;
+  background-color: rgb(109, 109, 255);
+  color: white;
+}
